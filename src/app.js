@@ -4,6 +4,7 @@ const app = express()
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const weathercode = require('./utils/weathercode')
+const testForGit = 65
 
 // Heroku port definition
 const port = process.env.PORT || 3000
@@ -24,7 +25,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'The greatest war ever',
+        title: 'The weather app',
         name: 'Matt Hughes'
 
     })
