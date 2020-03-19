@@ -5,6 +5,9 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const weathercode = require('./utils/weathercode')
 
+// Heroku port definition
+const port = process.env.PORT || 3000
+
 // Define paths for Expres config
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
